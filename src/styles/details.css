@@ -1,0 +1,94 @@
+.display-card {
+  margin: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.display-icon {
+  width: 150px;
+  height: 150px;
+}
+
+table {
+  font-family: 'Oxygen', sans-serif;
+}
+
+table,
+td,
+tr {
+  border: 1px solid #15e6cd;
+}
+
+table tr {
+  background-color: #5899e2;
+}
+
+table tr:nth-of-type(even) {
+  background-color: #335c81;
+}
+
+table td {
+  padding: 0.5rem;
+}
+
+.show-all {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
+
+.show-all button {
+  border-radius: 10px;
+  display: flex;
+  padding: 0.2rem 0.4rem;
+  gap: 2px;
+  background: #587291;
+  border: none;
+  color: #fff;
+}
+
+.made {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  color: black;
+}
+
+.made-con {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 0 20px;
+  border: 1px solid #888;
+  width: 60%; /* Could be more or less, depending on screen size */
+}
+
+.mechie {
+  position: relative;
+  top: 0;
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.font-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  align-items: center;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
