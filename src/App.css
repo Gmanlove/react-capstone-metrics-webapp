@@ -1,39 +1,67 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@700&family=Oxygen&family=Poly&display=swap');
+
+body {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+  color: #fff;
+  background: #65afff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+}
+
+header > div {
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+  gap: 0.5rem;
+}
+
+.milen-s {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-content: center;
 }
 
-.App-link {
-  color: #61dafb;
+.no-coin {
+  text-align: center;
+  font-size: 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.well-in {
+  cursor: pointer;
+}
+
+h1 {
+  font-family: 'Archivo Narrow', sans-serif;
+  font-size: 3rem;
+}
+
+.navigation-left,
+.navigation-right {
+  font-size: 1.3rem;
+}
+
+h2 {
+  font-family: 'Poly', serif;
+}
+
+.navigation-left span {
+  font-family: 'Poly', serif;
+}
+
+@media only screen and (max-width: 768px) {
+  .navigation-left,
+  .navigation-right {
+    font-size: 0.9rem;
   }
 
-  to {
-    transform: rotate(360deg);
+  h1 {
+    font-size: 1.2rem;
   }
 }
