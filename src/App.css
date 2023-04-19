@@ -5,7 +5,7 @@ body {
   padding: 0%;
   box-sizing: border-box;
   color: #fff;
-  background: #65afff;
+  background-image: -webkit-linear-gradient(65deg, #3bd6c9 40%, #46dd39 60%);
 }
 
 header {

@@ -21,11 +21,11 @@ tr {
 }
 
 table tr {
-  background-color: #5899e2;
+  background-color: #58c6e2;
 }
 
 table tr:nth-of-type(even) {
-  background-color: #335c81;
+  background-color: #e9a4d1;
 }
 
 table td {
