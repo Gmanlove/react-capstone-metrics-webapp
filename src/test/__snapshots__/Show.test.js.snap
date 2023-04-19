@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Test Details Route render Details 1`] = `
+exports[`Test Details Route should render Details component with a snapshot 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>

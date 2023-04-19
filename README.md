@@ -59,12 +59,12 @@ javaScript.
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [You can check the live demo here]()
+- [You can check the live demo here](https://graceful-treacle-9ae10f.netlify.app)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 📺 Presentation <a name="presentation"></a>
-- [ScreenRec Presentation]()
+- [Loom Presentation](https://www.loom.com/share/4f82e0a12cd94c3fbeead631843de32a)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

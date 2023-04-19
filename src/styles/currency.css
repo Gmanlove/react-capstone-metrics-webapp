@@ -4,9 +4,11 @@
 }
 
 .cry {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #e25878;
-  padding: 3rem 0;
+  height: 200px;
   cursor: pointer;
 }
 
@@ -17,6 +19,7 @@
 
 .searchBar {
   display: flex;
+  align-items: center;
   justify-content: center;
   margin: 2rem 0;
 }
@@ -24,13 +27,18 @@
 .searchBar input {
   text-align: center;
   font-size: 1.5rem;
-  height: 2rem;
+  height: 3rem;
   width: 50%;
-  border-radius: 10px;
+  border-radius: 5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
 }
 
 @media only screen and (max-width: 768px) {
   .searchBar input {
     font-size: 1rem;
+    height: 2.5rem;
+    width: 70%;
   }
 }

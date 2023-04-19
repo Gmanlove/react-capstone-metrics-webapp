@@ -4,11 +4,14 @@ const baseUrl = 'https://api.coinstats.app/public/v1/coins/';
 
 export const getDetailsData = createAsyncThunk('detail/getDetail', async (id) => {
   try {
-    const dataStream = await fetch(`${baseUrl}${id}`);
-    const data = await dataStream.json();
+    const response = await fetch(`${baseUrl}${id}`);
+    if (!response.ok) {
+      throw new Error('Failed to fetch data from the API');
+    }
+    const data = await response.json();
     return data.coin;
   } catch (err) {
-    throw new Error(err);
+    throw new Error(err.message);
   }
 });
 
@@ -16,6 +19,7 @@ const initialState = {
   details: null,
   isLoading: false,
   hasError: false,
+  error: null,
 };
 
 const detailSlice = createSlice({

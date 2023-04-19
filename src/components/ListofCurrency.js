@@ -7,7 +7,9 @@ import Loader from './Loader';
 const ListofCurrency = () => {
   const {
     cryptos, isFetched, isLoading, hasError,
-  } = useSelector((store) => store.crypto);
+  } = useSelector(
+    (store) => store.crypto,
+  );
   const [search, setSearch] = useState('');
 
   const dispatch = useDispatch();
@@ -26,8 +28,14 @@ const ListofCurrency = () => {
     );
   }
 
-  if (isLoading) return <Loader />;
-  if (hasError) return <h2 className="no-coin">An error has occured</h2>;
+  if (isLoading) {
+    return <Loader />;
+  }
+
+  if (hasError) {
+    return <h2 className="no-coin">An error has occurred</h2>;
+  }
+
   return (
     <div className="bucket">
       <div className="searchBar">
@@ -35,17 +43,12 @@ const ListofCurrency = () => {
           type="text"
           className="search-input"
           onChange={(e) => setSearch(e.target.value)}
-          placeholder="Search Crypto Coins "
+          placeholder="Search Coins "
         />
       </div>
       <div className="milen-s">
         {cryptos
-          .filter((crypto) => {
-            if (search === '') {
-              return true;
-            }
-            return crypto.name.toLowerCase().includes(search.toLowerCase());
-          })
+          .filter((crypto) => search === '' || crypto.name.toLowerCase().includes(search.toLowerCase()))
           .map((crypto, index) => (
             <Currency key={crypto.id} crypto={crypto} index={index} />
           ))}
