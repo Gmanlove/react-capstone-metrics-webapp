@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`test loader render 1`] = `
+exports[`Loader Component Tests should render Loader component with a snapshot 1`] = `
 <div
   className="loading"
 >

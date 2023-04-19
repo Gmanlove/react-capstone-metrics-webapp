@@ -7,14 +7,14 @@ const Currency = ({ crypto, index }) => {
   const navigate = useNavigate();
 
   const handleMouseOver = (e) => {
-    e.target.style.animationName = 'rotateIn'; // Set the animation name
-    e.target.style.animationDuration = '1s'; // Set the animation duration
-    e.target.style.animationTimingFunction = 'ease-in-out'; // Set the animation timing function
+    e.target.style.animationName = 'rotateIn';
+    e.target.style.animationDuration = '1s';
+    e.target.style.animationTimingFunction = 'ease-in-out';
   };
 
   const handleMouseOut = (e) => {
-    e.target.style.animation = ''; // Remove the animation
-    e.target.style.opacity = '0.5'; // Set the opacity of the element to 0.5
+    e.target.style.animation = '';
+    e.target.style.opacity = '0.5';
   };
 
   return (
