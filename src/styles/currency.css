@@ -5,14 +5,14 @@
 
 .cry {
   text-align: center;
-  background-color: #5899e2;
+  background-color: #e25878;
   padding: 3rem 0;
   cursor: pointer;
 }
 
 .cry:nth-child(4n-2),
 .cry:nth-child(4n-1) {
-  background-color: #335c81;
+  background-color: #813370;
 }
 
 .searchBar {

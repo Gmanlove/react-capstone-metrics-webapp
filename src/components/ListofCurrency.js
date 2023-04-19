@@ -18,20 +18,16 @@ const ListofCurrency = () => {
     }
   }, [dispatch, isFetched]);
 
-  if (isLoading) return <Loader />;
-
-  if (hasError) {
+  if (cryptos.length === 0) {
     return (
-      <h2 className="no-coin">
+      <h2 data-testid="cryptoItem" className="no-coin">
         An error has occurred. Please try again later.
       </h2>
     );
   }
 
-  if (cryptos.length === 0) {
-    return <Loader />; // Display a loading spinner instead of "No Crypto was fetched"
-  }
-
+  if (isLoading) return <Loader />;
+  if (hasError) return <h2 className="no-coin">An error has occured</h2>;
   return (
     <div className="bucket">
       <div className="searchBar">
@@ -46,7 +42,7 @@ const ListofCurrency = () => {
         {cryptos
           .filter((crypto) => {
             if (search === '') {
-              return true; // Return true to include all cryptos when search is empty
+              return true;
             }
             return crypto.name.toLowerCase().includes(search.toLowerCase());
           })
